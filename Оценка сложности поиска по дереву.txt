@@ -1,0 +1,19 @@
+//участок кода с реалтзацией поиска в бинарном дереве//
+
+struct Node* search(struct Node *r,int data ) {
+    if (r->data == data) return r;
+    else if (r->data < data && r->left != NULL) {
+        search(r->left, data);
+    }
+
+    else if (r->data > data && r->right != NULL) {
+        search(r->right, data);
+    }
+    else {
+        printf("Не найдено. ");
+        return NULL;
+    }
+}
+
+Поиск данных в бинарном дереве имеет сложность O(log(n),где n — количество узлов в дереве;
+Данные в бинарном дереве уже частично отсортированы, что позволяет снизить количество пространства для поиска вдвое на каждом уровне дерева, ;
