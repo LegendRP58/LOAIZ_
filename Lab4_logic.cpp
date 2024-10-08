@@ -33,7 +33,7 @@ struct Node* CreateTree(struct Node* root, struct Node* r, int data) {
 
     //Ислючение добавления одинаковых элементов
     if (data == r->data) {
-        print("Введен дубликат числа %d \n", data);
+        printf("Введен дубликат числа %d \n", data);
             return root;
     }
 
