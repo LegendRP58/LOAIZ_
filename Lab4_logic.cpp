@@ -31,6 +31,13 @@ struct Node* CreateTree(struct Node* root, struct Node* r, int data) {
         return r;
     }
 
+    //Ислючение добавления одинаковых элементов
+    if (data == r->data) {
+        print("Введен дубликат числа %d \n", data);
+            return root;
+    }
+
+
     if (data > r->data)
         CreateTree(r, r->left, data);
     else
