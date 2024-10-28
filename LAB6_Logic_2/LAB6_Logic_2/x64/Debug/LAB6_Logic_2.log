@@ -1,3 +1,0 @@
-﻿  LAB6_Logic_2.cpp
-C:\23VVV3\Logic\LAB6_Logic_2\LAB6_Logic_2.cpp(45,8): warning C4477: "scanf": в строке форматирования "%d" требуется аргумент типа "int *", но вариативный аргумент "1" имеет тип "int"
-  LAB6_Logic_2.vcxproj -> C:\23VVV3\Logic\LAB6_Logic_2\x64\Debug\LAB6_Logic_2.exe
